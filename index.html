@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-left">
+        <img
+          class="dashboard-image"
+          src="images/logo.svg"
+          alt="Dashboard illustration"
+        />
+        <div class="icon-buttons">
+          <button class="icon-btn document-btn">
+            <img src="images/icon-document.svg" alt="Document icon" />
+          </button>
+          <button class="icon-btn folder-btn">
+            <img src="images/icon-folder.svg" alt="Folder icon" />
+          </button>
+          <button class="icon-btn upload-btn">
+            <img src="images/icon-upload.svg" alt="Upload icon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="card-right">
+        <div class="storage-info">
+          <span class="storage-text">You’ve used 815 GB of your storage</span>
+          <div class="storage-left">185 GB Left</div>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-bar">
+            <div class="progress-bg">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="storage-range">
+            <div class="range-start">0 GB</div>
+            <div class="range-end">1000 GB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

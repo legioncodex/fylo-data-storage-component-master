@@ -1,0 +1,158 @@
+:root {
+  --gradient-start: hsl(6, 100%, 80%);
+  --gradient-end: hsl(335, 100%, 65%);
+
+  --blue-200: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --blue-850: hsl(228, 56%, 26%);
+  --blue-950: hsl(229, 57%, 11%);
+
+  --font-size: 14px;
+  --font-family: "Raleway", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--blue-950);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.card-left {
+  padding: 30px;
+  border-radius: 8px 64px 8px 8px;
+  background-color: var(--blue-850);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+}
+
+.dashboard-image {
+  width: 150px;
+}
+
+.icon-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: var(--blue-950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.document-btn {
+}
+
+.folder-btn {
+}
+
+.upload-btn {
+}
+
+.card-right {
+  padding: 30px;
+  border-radius: 8px;
+  background-color: var(--blue-850);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.storage-info {
+  display: flex;
+  color: var(--grayish-blue);
+}
+
+.storage-text {
+}
+
+.storage-left {
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  border-radius: 16px;
+    background-color: var(--blue-950);
+}
+
+.progress-bg {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+}
+
+.progress-fill {
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue-200);
+  border-radius: 50%;
+}
+
+.storage-range {
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue-200);
+}
+
+.range-start {
+}
+
+.range-end {
+}
+
+.attribution {
+}
+
+.attribution-link {
+}
+
+.author-link {
+}
